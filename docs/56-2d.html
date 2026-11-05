@@ -1,0 +1,55 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>56 LEDs · single-stencil body</title>
+<style>
+:root{color-scheme:light dark;--bg:light-dark(#f7f8fa,#14181c);--fg:light-dark(#202831,#e5eaf0);--muted:light-dark(#57636e,#a8b5c0);--line:light-dark(#cbd2d9,#3c4852);--field:light-dark(#fff,#20272e);--canvas:light-dark(#e9eef3,#1d252d);--solid:light-dark(#d6973f,#dca455);--guide:light-dark(#176caa,#69b9ef);--previous:light-dark(#98579e,#d5a5db)}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:14px system-ui,sans-serif}main{padding:16px;display:grid;gap:12px;max-width:1900px;margin:auto}h1{font-size:20px;font-weight:500;margin:0}header,.toolbar,.row,footer{display:flex;gap:12px;align-items:center;flex-wrap:wrap;justify-content:space-between}.toolbar{justify-content:start}.toolbar label{display:grid;gap:4px}.check{display:flex!important;flex-direction:row;align-items:center}.spacer{flex:1}button,select,input{font:inherit;color:var(--fg)}button,select,input[type=number]{background:var(--field);border:1px solid var(--line);border-radius:5px;padding:7px 10px}input[type=number]{width:70px}input[type=range]{width:100%;accent-color:var(--solid);margin:0}.sub,footer,#note{font-size:12px;color:var(--muted)}#stage{height:max(720px,calc(100vh - 255px));min-width:0;position:relative;background:var(--canvas);overflow:hidden;border-radius:6px}svg{display:block;width:100%;height:100%;touch-action:none;cursor:grab}svg.dragging{cursor:grabbing}path{stroke-linejoin:round;stroke-linecap:round}.guide{fill:none;stroke:var(--guide);stroke-width:1;vector-effect:non-scaling-stroke}.previous{fill:none;stroke:var(--previous);stroke-width:1;stroke-dasharray:4 3;vector-effect:non-scaling-stroke}#material{fill:var(--solid);fill-rule:evenodd;stroke:none}#stats{position:absolute;left:14px;top:12px;pointer-events:none;font-size:12px}#error{color:light-dark(#a51f21,#ff9a9c)}.expanded #stage{position:fixed;inset:0;z-index:30;height:100vh;border-radius:0}#exit{display:none;position:absolute;right:14px;top:12px}.expanded #exit{display:block}[hidden]{display:none!important}@media(max-width:650px){main{padding:10px}.spacer{display:none}#stage{height:max(600px,calc(100vh - 300px))}.toolbar{gap:8px}select{max-width:100%}}
+</style></head><body><main>
+<header><h1>56 LEDs · single-stencil body</h1><span class="sub">Single section · zoom and pan · no rotation</span></header>
+<div class="toolbar"><label>Geometry<select id="variant"></select></label><label class="check"><input id="target" type="checkbox" checked>Target aperture</label><label class="check"><input id="previous" type="checkbox">Previous layer outline</label><span class="spacer"></span><button id="zoomIn" aria-label="Zoom in">+</button><button id="zoomOut" aria-label="Zoom out">−</button><button id="fit">Fit</button><button id="expand">Expand</button></div>
+<div id="note"></div><div class="row"><div><button id="prev">←</button> <label>Layer <input id="number" type="number" min="1" max="62" value="52"></label> <button id="next">→</button></div><output id="height" aria-live="polite"></output></div>
+<input id="layer" type="range" min="1" max="62" value="52" aria-label="Layer">
+<div id="stage"><svg id="view" xmlns="http://www.w3.org/2000/svg" viewBox="-45.6 -45.6 91.2 91.2" role="img" aria-label="Top-down solid geometry of one selected layer"><path id="material"></path><path id="previousPath" class="previous"></path><path id="targetPath" class="guide"></path></svg><div id="stats"></div><button id="exit">Exit expanded view</button></div>
+<footer><span>Wheel: zoom at pointer · drag: pan · ←/→: layer · zoom stays fixed while changing layers</span><span>No CAD files exported</span></footer><div id="error" role="alert"></div>
+</main><script id="payload" type="application/octet-stream" data-src="./assets/56-2d.bin"></script><script type="module">
+const $=id=>document.getElementById(id),svg=$('view');window.inspectorState={ready:false};
+async function loadAsset(id){
+ const response=await fetch(new URL($(id).dataset.src,document.baseURI));
+ if(!response.ok)throw new Error(`Geometry download failed (${response.status}). Reload to retry.`);
+ const total=Number(response.headers.get('content-length'))||0;
+ const reader=response.body.getReader(),chunks=[];let length=0;
+ const status=$('status')||$('stats');
+ while(true){const {done,value}=await reader.read();if(done)break;chunks.push(value);length+=value.length;
+  if(status)status.textContent=`Loading geometry · ${(length/1048576).toFixed(1)}${total?` / ${(total/1048576).toFixed(1)}`:''} MB`;
+ }
+ const bytes=new Uint8Array(length);let offset=0;for(const chunk of chunks){bytes.set(chunk,offset);offset+=chunk.length;}
+ return bytes;
+}
+
+try{
+ const bytes=await loadAsset('payload');
+ const text=await new Response(new Blob([bytes]).stream().pipeThrough(new DecompressionStream('gzip'))).text(),data=JSON.parse(text);
+ for(const [key,v] of Object.entries(data.variants)){const o=document.createElement('option');o.value=key;o.textContent=v.label;$('variant').append(o);}
+ $('variant').value=data.defaultVariant;let box={x:-45.6,y:-45.6,w:91.2,h:91.2},drag=null;
+ function transform(){svg.setAttribute('viewBox',`${box.x} ${box.y} ${box.w} ${box.h}`);if(window.inspectorState.ready)window.inspectorState.viewBox={...box};}
+ function update(k=Number($('layer').value)){
+  const count=data.variants[$('variant').value].layers.length;
+  $('layer').max=$('number').max=count;
+  k=Math.min(count,Math.max(1,Math.round(k)));$('layer').value=$('number').value=k;
+  const key=$('variant').value,v=data.variants[key],layer=v.layers[k-1];$('material').setAttribute('d',layer.path);
+  $('targetPath').setAttribute('d',$('target').checked?data.target:'');$('previousPath').setAttribute('d',$('previous').checked&&k>1?v.layers[k-2].path:'');
+  $('note').textContent=v.note;$('height').textContent=`Z ${((k-1)*.2).toFixed(2)}–${(k*.2).toFixed(2)} mm`;
+  $('stats').textContent=`Layer ${k} / ${count} · ${layer.vertices.toLocaleString()} outline vertices`+(data.weights&&key!=='x0'?` · simplification ${data.weights[k-1].toFixed(1)}%`:key==='global'?` · whole mesh ${data.report.probe_triangles.toLocaleString()} triangles`:'');
+  window.inspectorState={ready:true,layer:k,variant:key,viewBox:{...box},previous:$('previous').checked,target:$('target').checked,vertices:layer.vertices,strict2D:true};
+ }
+ function point(x,y,inverse=svg.getScreenCTM().inverse()){return new DOMPoint(x,y).matrixTransform(inverse);}
+ function zoom(f,anchor={x:box.x+box.w/2,y:box.y+box.h/2}){const width=box.w*f;if(width<.25||width>500)return;box={x:anchor.x+(box.x-anchor.x)*f,y:anchor.y+(box.y-anchor.y)*f,w:width,h:box.h*f};transform();}
+ svg.addEventListener('wheel',e=>{e.preventDefault();zoom(Math.exp(Math.max(-.5,Math.min(.5,e.deltaY*.0015))),point(e.clientX,e.clientY));},{passive:false});
+ svg.addEventListener('pointerdown',e=>{if(e.button!==0)return;drag={box:{...box},inverse:svg.getScreenCTM().inverse(),point:point(e.clientX,e.clientY)};svg.setPointerCapture(e.pointerId);svg.classList.add('dragging');});
+ svg.addEventListener('pointermove',e=>{if(!drag)return;const p=point(e.clientX,e.clientY,drag.inverse);box={...drag.box,x:drag.box.x-(p.x-drag.point.x),y:drag.box.y-(p.y-drag.point.y)};transform();});
+ function end(){drag=null;svg.classList.remove('dragging');}svg.addEventListener('pointerup',end);svg.addEventListener('pointercancel',end);
+ $('zoomIn').onclick=()=>zoom(.8);$('zoomOut').onclick=()=>zoom(1.25);$('fit').onclick=()=>{box={x:-45.6,y:-45.6,w:91.2,h:91.2};transform();};
+ $('layer').oninput=()=>update();$('number').onchange=()=>update(Number($('number').value));$('variant').onchange=()=>update();$('target').onchange=()=>update();$('previous').onchange=()=>update();$('prev').onclick=()=>update(Number($('layer').value)-1);$('next').onclick=()=>update(Number($('layer').value)+1);
+ $('expand').onclick=()=>document.body.classList.add('expanded');$('exit').onclick=()=>document.body.classList.remove('expanded');
+ addEventListener('keydown',e=>{if(e.key==='Escape')document.body.classList.remove('expanded');if(['INPUT','SELECT'].includes(e.target.tagName))return;if(e.key==='ArrowLeft'||e.key==='ArrowRight'){e.preventDefault();update(Number($('layer').value)+(e.key==='ArrowLeft'?-1:1));}});
+ window.layerInspector={setLayer:update,setVariant:key=>{$('variant').value=key;update();},state:()=>window.inspectorState,report:()=>data.report};update(data.defaultLayer);transform();
+}catch(e){$('error').textContent=String(e);window.inspectorState={ready:false,error:String(e)};throw e;}
+</script></body></html>

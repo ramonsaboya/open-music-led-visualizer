@@ -1,0 +1,904 @@
+{
+  "preview_only": true,
+  "CAD_exported": false,
+  "sliced": false,
+  "active_LED_count": 52,
+  "body_white_mm": 0.4,
+  "body_black_stencil_layers": 1,
+  "body_black_stencil_mm": 0.2,
+  "body_stencil_top_z_mm": 0.6,
+  "body_width_mm": 88,
+  "body_wall_mm": 2.25,
+  "body_height_mm": 18.4,
+  "insert_width_mm": 83.2,
+  "insert_core_height_mm": 13.4,
+  "mating_face_layer": 67,
+  "PCB_z_mm": 14.0,
+  "LED_top_z_mm": 13.6,
+  "clearance_mm": 0.4,
+  "unused_LEDs": [
+    1,
+    2,
+    7,
+    8,
+    9,
+    16,
+    49,
+    56,
+    57,
+    58,
+    63,
+    64
+  ],
+  "pyramid_first_fully_closed_layer": 28,
+  "pin_height_mm": 0.2,
+  "pin_radii_mm": [
+    0.7,
+    1.1
+  ],
+  "socket_depth_mm": 0.2,
+  "white_layers_perforated": false,
+  "source_master": "engineering/channel-allocation/global-morph-CAD-v9-X9/insert-black-GRID-DOWN.stl",
+  "source_layer_mapping": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62
+  ],
+  "per_layer": [
+    {
+      "strength_percent": 0.0
+    },
+    {
+      "strength_percent": 0.0
+    },
+    {
+      "strength_percent": 100.0
+    },
+    {
+      "strength_percent": 100.0
+    },
+    {
+      "strength_percent": 100.0
+    },
+    {
+      "strength_percent": 100.0
+    },
+    {
+      "strength_percent": 100.0
+    },
+    {
+      "strength_percent": 100.0
+    },
+    {
+      "strength_percent": 100.0
+    },
+    {
+      "strength_percent": 100.0
+    },
+    {
+      "strength_percent": 100.0
+    },
+    {
+      "strength_percent": 100.0
+    },
+    {
+      "strength_percent": 100.0
+    },
+    {
+      "strength_percent": 100.0
+    },
+    {
+      "strength_percent": 100.0
+    },
+    {
+      "strength_percent": 100.0
+    },
+    {
+      "strength_percent": 100.0
+    },
+    {
+      "strength_percent": 100.0
+    },
+    {
+      "strength_percent": 100.0
+    },
+    {
+      "strength_percent": 100.0
+    },
+    {
+      "strength_percent": 100.0
+    },
+    {
+      "strength_percent": 100.0
+    },
+    {
+      "strength_percent": 100.0
+    },
+    {
+      "strength_percent": 100.0
+    },
+    {
+      "strength_percent": 100.0
+    },
+    {
+      "strength_percent": 100.0
+    },
+    {
+      "strength_percent": 100.0
+    },
+    {
+      "strength_percent": 100.0
+    },
+    {
+      "strength_percent": 100.0
+    },
+    {
+      "strength_percent": 100.0
+    },
+    {
+      "strength_percent": 100.0
+    },
+    {
+      "strength_percent": 100.0
+    },
+    {
+      "strength_percent": 100.0
+    },
+    {
+      "strength_percent": 100.0
+    },
+    {
+      "strength_percent": 100.0
+    },
+    {
+      "strength_percent": 100.0
+    },
+    {
+      "strength_percent": 100.0
+    },
+    {
+      "strength_percent": 100.0
+    },
+    {
+      "strength_percent": 100.0
+    },
+    {
+      "strength_percent": 100.0
+    },
+    {
+      "strength_percent": 100.0
+    },
+    {
+      "strength_percent": 100.0
+    },
+    {
+      "strength_percent": 100.0
+    },
+    {
+      "strength_percent": 100.0
+    },
+    {
+      "strength_percent": 100.0
+    },
+    {
+      "strength_percent": 100.0
+    },
+    {
+      "strength_percent": 100.0
+    },
+    {
+      "strength_percent": 100.0
+    },
+    {
+      "strength_percent": 100.0
+    },
+    {
+      "strength_percent": 100.0
+    },
+    {
+      "strength_percent": 100.0
+    },
+    {
+      "strength_percent": 100.0
+    },
+    {
+      "strength_percent": 100.0
+    },
+    {
+      "strength_percent": 100.0
+    },
+    {
+      "strength_percent": 100.0
+    },
+    {
+      "strength_percent": 100.0
+    },
+    {
+      "strength_percent": 74.17155021388791
+    },
+    {
+      "strength_percent": 54.59724559984187
+    },
+    {
+      "strength_percent": 39.762696709126615
+    },
+    {
+      "strength_percent": 28.52021095394385
+    },
+    {
+      "strength_percent": 20.0
+    },
+    {
+      "strength_percent": 20.0
+    },
+    {
+      "strength_percent": 13.542887553471978
+    },
+    {
+      "strength_percent": 8.649311399960464
+    },
+    {
+      "strength_percent": 4.940674177281655
+    },
+    {
+      "strength_percent": 2.1300527384859613
+    },
+    {
+      "strength_percent": 0.0
+    }
+  ],
+  "default_layer": 67,
+  "variants": {
+    "9": {
+      "bridge_start_assembly_layer": 9,
+      "divider_start_assembly_z_mm": 1.6,
+      "diffuser_to_divider_gap_mm": 1.2000000000000002,
+      "last_divided_insert_layer": 62,
+      "divider_free_insert_layers": [
+        63,
+        64,
+        65,
+        66,
+        67
+      ],
+      "top_layer_error_mm2": 0.0,
+      "lower_source_chambers_isolated": true,
+      "upper_air_is_intentionally_shared": true,
+      "removed_unrooted_bulk_specks_mm3": 0.14628805276306822,
+      "added_material_vs_master_mm2": 0.0,
+      "support_diagnostic": [
+        {
+          "layer": 2,
+          "area_beyond_30_degree_support_mm2": 0.0
+        },
+        {
+          "layer": 3,
+          "area_beyond_30_degree_support_mm2": 95.98896760315876
+        },
+        {
+          "layer": 4,
+          "area_beyond_30_degree_support_mm2": 132.71269460173943
+        },
+        {
+          "layer": 5,
+          "area_beyond_30_degree_support_mm2": 43.98966774790424
+        },
+        {
+          "layer": 6,
+          "area_beyond_30_degree_support_mm2": 79.51266792288125
+        },
+        {
+          "layer": 7,
+          "area_beyond_30_degree_support_mm2": 36.61643200911796
+        },
+        {
+          "layer": 8,
+          "area_beyond_30_degree_support_mm2": 7.0243165782231864
+        },
+        {
+          "layer": 9,
+          "area_beyond_30_degree_support_mm2": 38.90227099990213
+        },
+        {
+          "layer": 10,
+          "area_beyond_30_degree_support_mm2": 0.0
+        },
+        {
+          "layer": 11,
+          "area_beyond_30_degree_support_mm2": 58.39056103028026
+        },
+        {
+          "layer": 12,
+          "area_beyond_30_degree_support_mm2": 6.215127612164167
+        },
+        {
+          "layer": 13,
+          "area_beyond_30_degree_support_mm2": 43.616683887463715
+        },
+        {
+          "layer": 14,
+          "area_beyond_30_degree_support_mm2": 29.38150114917013
+        },
+        {
+          "layer": 15,
+          "area_beyond_30_degree_support_mm2": 25.198546235713405
+        },
+        {
+          "layer": 16,
+          "area_beyond_30_degree_support_mm2": 36.50746189448453
+        },
+        {
+          "layer": 17,
+          "area_beyond_30_degree_support_mm2": 12.678414189506285
+        },
+        {
+          "layer": 18,
+          "area_beyond_30_degree_support_mm2": 33.33358964040381
+        },
+        {
+          "layer": 19,
+          "area_beyond_30_degree_support_mm2": 26.4169257749504
+        },
+        {
+          "layer": 20,
+          "area_beyond_30_degree_support_mm2": 20.889228557678976
+        },
+        {
+          "layer": 21,
+          "area_beyond_30_degree_support_mm2": 22.40624430938918
+        },
+        {
+          "layer": 22,
+          "area_beyond_30_degree_support_mm2": 0.0
+        },
+        {
+          "layer": 23,
+          "area_beyond_30_degree_support_mm2": 16.06834126731441
+        },
+        {
+          "layer": 24,
+          "area_beyond_30_degree_support_mm2": 26.23707604472385
+        },
+        {
+          "layer": 25,
+          "area_beyond_30_degree_support_mm2": 16.02648997037169
+        },
+        {
+          "layer": 26,
+          "area_beyond_30_degree_support_mm2": 18.41092887822095
+        },
+        {
+          "layer": 27,
+          "area_beyond_30_degree_support_mm2": 14.295699289167473
+        },
+        {
+          "layer": 28,
+          "area_beyond_30_degree_support_mm2": 14.00021681907297
+        },
+        {
+          "layer": 29,
+          "area_beyond_30_degree_support_mm2": 11.124821393772983
+        },
+        {
+          "layer": 30,
+          "area_beyond_30_degree_support_mm2": 13.996051650719929
+        },
+        {
+          "layer": 31,
+          "area_beyond_30_degree_support_mm2": 11.986803286158931
+        },
+        {
+          "layer": 32,
+          "area_beyond_30_degree_support_mm2": 9.229601426005853
+        },
+        {
+          "layer": 33,
+          "area_beyond_30_degree_support_mm2": 20.983049267018984
+        },
+        {
+          "layer": 34,
+          "area_beyond_30_degree_support_mm2": 7.290983340307301
+        },
+        {
+          "layer": 35,
+          "area_beyond_30_degree_support_mm2": 17.053852014064876
+        },
+        {
+          "layer": 36,
+          "area_beyond_30_degree_support_mm2": 0.0
+        },
+        {
+          "layer": 37,
+          "area_beyond_30_degree_support_mm2": 17.11566307850941
+        },
+        {
+          "layer": 38,
+          "area_beyond_30_degree_support_mm2": 10.158896487084878
+        },
+        {
+          "layer": 39,
+          "area_beyond_30_degree_support_mm2": 29.765284500160888
+        },
+        {
+          "layer": 40,
+          "area_beyond_30_degree_support_mm2": 8.097830725063972
+        },
+        {
+          "layer": 41,
+          "area_beyond_30_degree_support_mm2": 15.863392366216045
+        },
+        {
+          "layer": 42,
+          "area_beyond_30_degree_support_mm2": 16.22622552315711
+        },
+        {
+          "layer": 43,
+          "area_beyond_30_degree_support_mm2": 14.70390858261719
+        },
+        {
+          "layer": 44,
+          "area_beyond_30_degree_support_mm2": 15.400895596910818
+        },
+        {
+          "layer": 45,
+          "area_beyond_30_degree_support_mm2": 15.333534286693284
+        },
+        {
+          "layer": 46,
+          "area_beyond_30_degree_support_mm2": 15.070891864925041
+        },
+        {
+          "layer": 47,
+          "area_beyond_30_degree_support_mm2": 16.443446219914676
+        },
+        {
+          "layer": 48,
+          "area_beyond_30_degree_support_mm2": 0.0
+        },
+        {
+          "layer": 49,
+          "area_beyond_30_degree_support_mm2": 9.799977776272868
+        },
+        {
+          "layer": 50,
+          "area_beyond_30_degree_support_mm2": 22.04918926213242
+        },
+        {
+          "layer": 51,
+          "area_beyond_30_degree_support_mm2": 9.978269700900274
+        },
+        {
+          "layer": 52,
+          "area_beyond_30_degree_support_mm2": 19.104373676051367
+        },
+        {
+          "layer": 53,
+          "area_beyond_30_degree_support_mm2": 16.630383309687257
+        },
+        {
+          "layer": 54,
+          "area_beyond_30_degree_support_mm2": 8.224961445195571
+        },
+        {
+          "layer": 55,
+          "area_beyond_30_degree_support_mm2": 19.817365439971525
+        },
+        {
+          "layer": 56,
+          "area_beyond_30_degree_support_mm2": 10.621206785563341
+        },
+        {
+          "layer": 57,
+          "area_beyond_30_degree_support_mm2": 18.845846693914893
+        },
+        {
+          "layer": 58,
+          "area_beyond_30_degree_support_mm2": 18.96236238233895
+        },
+        {
+          "layer": 59,
+          "area_beyond_30_degree_support_mm2": 9.427542227637568
+        },
+        {
+          "layer": 60,
+          "area_beyond_30_degree_support_mm2": 20.700950370528865
+        },
+        {
+          "layer": 61,
+          "area_beyond_30_degree_support_mm2": 18.96169247285885
+        },
+        {
+          "layer": 62,
+          "area_beyond_30_degree_support_mm2": 0.0
+        },
+        {
+          "layer": 63,
+          "area_beyond_30_degree_support_mm2": 16.69698434415958
+        },
+        {
+          "layer": 64,
+          "area_beyond_30_degree_support_mm2": 32.89815263938131
+        },
+        {
+          "layer": 65,
+          "area_beyond_30_degree_support_mm2": 22.359896298954236
+        },
+        {
+          "layer": 66,
+          "area_beyond_30_degree_support_mm2": 32.09954664217738
+        },
+        {
+          "layer": 67,
+          "area_beyond_30_degree_support_mm2": 3.6166517668032236
+        }
+      ]
+    },
+    "6": {
+      "bridge_start_assembly_layer": 6,
+      "divider_start_assembly_z_mm": 1.0,
+      "diffuser_to_divider_gap_mm": 0.6000000000000001,
+      "last_divided_insert_layer": 65,
+      "divider_free_insert_layers": [
+        66,
+        67
+      ],
+      "top_layer_error_mm2": 0.0,
+      "lower_source_chambers_isolated": true,
+      "upper_air_is_intentionally_shared": true,
+      "removed_unrooted_bulk_specks_mm3": 0,
+      "added_material_vs_master_mm2": 0.0,
+      "support_diagnostic": [
+        {
+          "layer": 2,
+          "area_beyond_30_degree_support_mm2": 0.0
+        },
+        {
+          "layer": 3,
+          "area_beyond_30_degree_support_mm2": 95.98896760315876
+        },
+        {
+          "layer": 4,
+          "area_beyond_30_degree_support_mm2": 132.71269460173943
+        },
+        {
+          "layer": 5,
+          "area_beyond_30_degree_support_mm2": 43.98966774790424
+        },
+        {
+          "layer": 6,
+          "area_beyond_30_degree_support_mm2": 79.51266792288125
+        },
+        {
+          "layer": 7,
+          "area_beyond_30_degree_support_mm2": 36.61643200911796
+        },
+        {
+          "layer": 8,
+          "area_beyond_30_degree_support_mm2": 7.0243165782231864
+        },
+        {
+          "layer": 9,
+          "area_beyond_30_degree_support_mm2": 38.90227099990213
+        },
+        {
+          "layer": 10,
+          "area_beyond_30_degree_support_mm2": 0.0
+        },
+        {
+          "layer": 11,
+          "area_beyond_30_degree_support_mm2": 58.39056103028026
+        },
+        {
+          "layer": 12,
+          "area_beyond_30_degree_support_mm2": 6.215127612164167
+        },
+        {
+          "layer": 13,
+          "area_beyond_30_degree_support_mm2": 43.616683887463715
+        },
+        {
+          "layer": 14,
+          "area_beyond_30_degree_support_mm2": 29.38150114917013
+        },
+        {
+          "layer": 15,
+          "area_beyond_30_degree_support_mm2": 25.198546235713405
+        },
+        {
+          "layer": 16,
+          "area_beyond_30_degree_support_mm2": 36.50746189448453
+        },
+        {
+          "layer": 17,
+          "area_beyond_30_degree_support_mm2": 12.678414189506285
+        },
+        {
+          "layer": 18,
+          "area_beyond_30_degree_support_mm2": 33.33358964040381
+        },
+        {
+          "layer": 19,
+          "area_beyond_30_degree_support_mm2": 26.4169257749504
+        },
+        {
+          "layer": 20,
+          "area_beyond_30_degree_support_mm2": 20.889228557678976
+        },
+        {
+          "layer": 21,
+          "area_beyond_30_degree_support_mm2": 22.40624430938918
+        },
+        {
+          "layer": 22,
+          "area_beyond_30_degree_support_mm2": 0.0
+        },
+        {
+          "layer": 23,
+          "area_beyond_30_degree_support_mm2": 16.06834126731441
+        },
+        {
+          "layer": 24,
+          "area_beyond_30_degree_support_mm2": 26.23707604472385
+        },
+        {
+          "layer": 25,
+          "area_beyond_30_degree_support_mm2": 16.02648997037169
+        },
+        {
+          "layer": 26,
+          "area_beyond_30_degree_support_mm2": 18.41092887822095
+        },
+        {
+          "layer": 27,
+          "area_beyond_30_degree_support_mm2": 14.295699289167473
+        },
+        {
+          "layer": 28,
+          "area_beyond_30_degree_support_mm2": 14.00021681907297
+        },
+        {
+          "layer": 29,
+          "area_beyond_30_degree_support_mm2": 11.124821393772983
+        },
+        {
+          "layer": 30,
+          "area_beyond_30_degree_support_mm2": 13.996051650719929
+        },
+        {
+          "layer": 31,
+          "area_beyond_30_degree_support_mm2": 11.986803286158931
+        },
+        {
+          "layer": 32,
+          "area_beyond_30_degree_support_mm2": 9.229601426005853
+        },
+        {
+          "layer": 33,
+          "area_beyond_30_degree_support_mm2": 20.983049267018984
+        },
+        {
+          "layer": 34,
+          "area_beyond_30_degree_support_mm2": 7.290983340307301
+        },
+        {
+          "layer": 35,
+          "area_beyond_30_degree_support_mm2": 17.053852014064876
+        },
+        {
+          "layer": 36,
+          "area_beyond_30_degree_support_mm2": 0.0
+        },
+        {
+          "layer": 37,
+          "area_beyond_30_degree_support_mm2": 17.11566307850941
+        },
+        {
+          "layer": 38,
+          "area_beyond_30_degree_support_mm2": 10.158896487084878
+        },
+        {
+          "layer": 39,
+          "area_beyond_30_degree_support_mm2": 29.765284500160888
+        },
+        {
+          "layer": 40,
+          "area_beyond_30_degree_support_mm2": 8.097830725063972
+        },
+        {
+          "layer": 41,
+          "area_beyond_30_degree_support_mm2": 15.863392366216045
+        },
+        {
+          "layer": 42,
+          "area_beyond_30_degree_support_mm2": 16.22622552315711
+        },
+        {
+          "layer": 43,
+          "area_beyond_30_degree_support_mm2": 14.70390858261719
+        },
+        {
+          "layer": 44,
+          "area_beyond_30_degree_support_mm2": 15.400895596910818
+        },
+        {
+          "layer": 45,
+          "area_beyond_30_degree_support_mm2": 15.333534286693284
+        },
+        {
+          "layer": 46,
+          "area_beyond_30_degree_support_mm2": 15.070891864925041
+        },
+        {
+          "layer": 47,
+          "area_beyond_30_degree_support_mm2": 16.443446219914676
+        },
+        {
+          "layer": 48,
+          "area_beyond_30_degree_support_mm2": 0.0
+        },
+        {
+          "layer": 49,
+          "area_beyond_30_degree_support_mm2": 9.799977776272868
+        },
+        {
+          "layer": 50,
+          "area_beyond_30_degree_support_mm2": 22.04918926213242
+        },
+        {
+          "layer": 51,
+          "area_beyond_30_degree_support_mm2": 9.978269700900274
+        },
+        {
+          "layer": 52,
+          "area_beyond_30_degree_support_mm2": 19.104373676051367
+        },
+        {
+          "layer": 53,
+          "area_beyond_30_degree_support_mm2": 16.630383309687257
+        },
+        {
+          "layer": 54,
+          "area_beyond_30_degree_support_mm2": 8.224961445195571
+        },
+        {
+          "layer": 55,
+          "area_beyond_30_degree_support_mm2": 19.817365439971525
+        },
+        {
+          "layer": 56,
+          "area_beyond_30_degree_support_mm2": 10.621206785563341
+        },
+        {
+          "layer": 57,
+          "area_beyond_30_degree_support_mm2": 18.845846693914893
+        },
+        {
+          "layer": 58,
+          "area_beyond_30_degree_support_mm2": 18.96236238233895
+        },
+        {
+          "layer": 59,
+          "area_beyond_30_degree_support_mm2": 9.427542227637568
+        },
+        {
+          "layer": 60,
+          "area_beyond_30_degree_support_mm2": 20.700950370528865
+        },
+        {
+          "layer": 61,
+          "area_beyond_30_degree_support_mm2": 18.96169247285885
+        },
+        {
+          "layer": 62,
+          "area_beyond_30_degree_support_mm2": 0.0
+        },
+        {
+          "layer": 63,
+          "area_beyond_30_degree_support_mm2": 18.180400578010605
+        },
+        {
+          "layer": 64,
+          "area_beyond_30_degree_support_mm2": 20.736252733824895
+        },
+        {
+          "layer": 65,
+          "area_beyond_30_degree_support_mm2": 23.718301540475792
+        },
+        {
+          "layer": 66,
+          "area_beyond_30_degree_support_mm2": 22.499787503415757
+        },
+        {
+          "layer": 67,
+          "area_beyond_30_degree_support_mm2": 3.6166517668032236
+        }
+      ]
+    }
+  },
+  "body_only_straight_ray_probe": {
+    "method": "Sampled straight rays from assigned LED centres to diffuser underside; body stencil only",
+    "channel_walls_reflections_diffusion_and_brightness_not_modelled": true,
+    "results": {
+      "old_static_body": {
+        "sampled_target_pixels": 27301,
+        "blocked_pixels": 1832,
+        "blocked_percent": 6.710376909270723
+      },
+      "single_stencil_body": {
+        "sampled_target_pixels": 27301,
+        "blocked_pixels": 16,
+        "blocked_percent": 0.05860591187136002
+      }
+    }
+  },
+  "caveats": [
+    "No optical simulation or prediction of brightness/bleed.",
+    "Gap intentionally connects channels near the face.",
+    "30-degree support diagnostic is measured, not enforced.",
+    "One-layer pins are shallow registration aids; physical fit untested."
+  ]
+}

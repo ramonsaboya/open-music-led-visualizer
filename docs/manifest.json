@@ -1,0 +1,96 @@
+{
+  "format": 1,
+  "preview": "single-stencil",
+  "layouts": [
+    52,
+    56,
+    64
+  ],
+  "files": {
+    "index.html": {
+      "bytes": 3279,
+      "sha256": "f439e723bd25a97546b3a6cdf72b7fa1f1054dade6d2818794ab8cec3efe25d9"
+    },
+    "assets/52-report.json": {
+      "bytes": 20748,
+      "sha256": "3d0be9de6a782464e6cf4696a6e8ac9a780130d7f8101f16e076e31c39319296"
+    },
+    "assets/52-2d.bin": {
+      "bytes": 5234818,
+      "sha256": "e68fc6f566be2485ae4a4e3bdb8461e868169f6763ef7ae8ae9ea144516cb1da"
+    },
+    "52-2d.html": {
+      "bytes": 8676,
+      "sha256": "38296a89393638e12ce409737320908fac85903b9134068e3a77b672a95a0f5b"
+    },
+    "assets/52-3d.bin": {
+      "bytes": 18458122,
+      "sha256": "5161a38792835b3127bc574840de95e507c78da7d47bce19d8838e57ad21b102"
+    },
+    "vendor/three.module.js": {
+      "bytes": 1304820,
+      "sha256": "0a3368c165eea773490aec7b77c22de70e3eac288503409256fdbf4d12578416"
+    },
+    "vendor/OrbitControls.js": {
+      "bytes": 32134,
+      "sha256": "80efaadea4f8a636a65fb0bd08bfef62f3d93a0bb94e2e7500f23176c5c07f4e"
+    },
+    "52-3d.html": {
+      "bytes": 131327,
+      "sha256": "0e57fcbeed5bc204dca7ce012d88424af600c614192b9af768a07f41fdb72d64"
+    },
+    "assets/56-report.json": {
+      "bytes": 20702,
+      "sha256": "47fca086a02989074369dc65a2410ad2f1bb1b0835867e6bbbf79acad1e5de78"
+    },
+    "assets/56-2d.bin": {
+      "bytes": 11323659,
+      "sha256": "a6ec1b7a4aa51ecf61b267e374ac4ccb1a6a8bc1e5feec34cb6c4428b8a30307"
+    },
+    "56-2d.html": {
+      "bytes": 8676,
+      "sha256": "727a311d503416f2946ad4c4e7eddbf990cfa79479b6c65b087794044f892a75"
+    },
+    "assets/56-3d.bin": {
+      "bytes": 39056176,
+      "sha256": "9caf86bf41da61569e157fdcbcf07c2ea598a62e815307b81e6541b9f887ec4c"
+    },
+    "56-3d.html": {
+      "bytes": 132622,
+      "sha256": "a83ffc6368bcac3093a85ea1edf56c00641a9d397894c99f1b88bf956a2c9d2e"
+    },
+    "assets/64-report.json": {
+      "bytes": 20645,
+      "sha256": "a1e63b45d53bada59d7cfd78e40541f924b8ae2f826578a29ce3afd4694c01da"
+    },
+    "assets/64-2d.bin": {
+      "bytes": 13141203,
+      "sha256": "1dfa4b1c47ad5e0ee4e321e4e66b897b5f0a729c42c2284644405e488e79093f"
+    },
+    "64-2d.html": {
+      "bytes": 8676,
+      "sha256": "6d369ca3c94ce868fac2d9229f35cdd40bd623065b687be27e34e0e645e8ae1c"
+    },
+    "assets/64-3d.bin": {
+      "bytes": 47305305,
+      "sha256": "a07ed1ae1036d045b1821d5224f5781485a55862302e28a79512c4f5a3c4b898"
+    },
+    "64-3d.html": {
+      "bytes": 133284,
+      "sha256": "20918ab2f6cf253d9a4b23364a6ac926253880fe823a5d1bb9b148187a206724"
+    },
+    "vendor/LICENSE.three.txt": {
+      "bytes": 1081,
+      "sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454"
+    },
+    ".nojekyll": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "version.json": {
+      "bytes": 236,
+      "sha256": "68cc59964641d46a0d7ba2c36ad04e43ddd3b70cc09c2b551cc1e55b01e65deb"
+    }
+  },
+  "geometry_regenerated": false
+}

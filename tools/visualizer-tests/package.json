@@ -1,0 +1,6 @@
+{
+  "name": "led-visualizer-checks",
+  "private": true,
+  "scripts": {"test": "node check.cjs"},
+  "devDependencies": {"playwright": "1.62.1"}
+}

@@ -1,0 +1,15 @@
+{
+  "preview": "single-stencil",
+  "layouts": [
+    52,
+    56,
+    64
+  ],
+  "body_black_layers": 1,
+  "mating_layer": 67,
+  "X": [
+    6,
+    9
+  ],
+  "content_id": "4b053fb144b91e5c59839604edfda38bbf10c746f5dfe665338b765f6edccc48"
+}

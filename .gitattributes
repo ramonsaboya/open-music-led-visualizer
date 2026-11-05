@@ -1,0 +1,9 @@
+* text=auto
+docs/** text eol=lf
+docs/assets/*.bin binary
+docs/vendor/*.js whitespace=-space-before-tab
+*.py text eol=lf
+*.md text eol=lf
+*.cjs text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
