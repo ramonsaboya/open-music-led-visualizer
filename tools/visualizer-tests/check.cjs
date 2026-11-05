@@ -16,15 +16,15 @@ const server=http.createServer((req,res)=>{
   await page.goto(url,{timeout:60000});
   for(const n of [52,56,64]){
    await page.selectOption('#layout',String(n));
-   await page.waitForFunction(n=>document.querySelector('#flat').contentWindow.layerInspector?.state()?.layer===67&&document.querySelector('#flat').contentDocument.querySelector('h1')?.textContent.startsWith(String(n)),n,{timeout:180000});
+   await page.waitForFunction(n=>singleStencil.state().ready&&singleStencil.state().layout===String(n)&&singleStencil.state().layer===67&&document.querySelector('#flat').contentDocument.querySelector('h1')?.textContent.startsWith(String(n)),n,{timeout:180000});
    const f=page.frameLocator('#flat');
    await f.locator('body').evaluate(()=>layerInspector.setLayer(63));
    await page.selectOption('#x','9');await page.waitForFunction(()=>document.querySelector('#flat').contentWindow.layerInspector.state().variant==='x9');
    const a=await f.locator('#material').getAttribute('d');
    await page.selectOption('#x','6');await page.waitForFunction(()=>document.querySelector('#flat').contentWindow.layerInspector.state().variant==='x6');
-   assert.notEqual(a,await f.locator('#material').getAttribute('d'));
+   assert(a!==await f.locator('#material').getAttribute('d'),'X6 and X9 must differ at layer 63');
    await page.click('#three');
-   await page.waitForFunction(n=>document.querySelector('#solid').contentWindow.geometryInspector?.state()?.layer===63&&document.querySelector('#solid').contentDocument.querySelector('h1')?.textContent.includes(`${n} LEDs`),n,{timeout:180000});
+   await page.waitForFunction(n=>singleStencil.state().ready&&document.querySelector('#solid').contentWindow.geometryInspector?.state()?.layer===63&&document.querySelector('#solid').contentDocument.querySelector('h1')?.textContent.includes(`${n} LEDs`),n,{timeout:180000});
    const solid=page.frameLocator('#solid');assert.match(await solid.locator('#status').innerText(),/divided channels/);
    await page.selectOption('#x','9');await page.waitForFunction(()=>document.querySelector('#solid').contentDocument.querySelector('#status').textContent.includes('bulk only'));
    await solid.locator('body').evaluate(()=>{geometryInspector.setView('body','slab');geometryInspector.setLayer(3);});

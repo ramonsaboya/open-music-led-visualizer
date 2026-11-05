@@ -8,8 +8,8 @@
   ],
   "files": {
     "index.html": {
-      "bytes": 3279,
-      "sha256": "f439e723bd25a97546b3a6cdf72b7fa1f1054dade6d2818794ab8cec3efe25d9"
+      "bytes": 3344,
+      "sha256": "786a63ad878c71596de0d5d99fbf20b563d9a6cbf010b3a99e6de65e26ef3d0c"
     },
     "assets/52-report.json": {
       "bytes": 20748,
@@ -89,7 +89,7 @@
     },
     "version.json": {
       "bytes": 236,
-      "sha256": "68cc59964641d46a0d7ba2c36ad04e43ddd3b70cc09c2b551cc1e55b01e65deb"
+      "sha256": "a3b90b05cf30c447eee0e0eab8d0d202fea805d81de1e9001c5a3d8de7612c2c"
     }
   },
   "geometry_regenerated": false
